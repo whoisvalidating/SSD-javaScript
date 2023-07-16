@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>html/css review</title>
+  <style>
+    .red-button {
+      background-color: red;
+      border: none;
+      color: white;
+    }
+    .yellow-button {
+      background-color: yellow;
+    }
+    /*this is a comment*/
+  </style>
+</head>
+<body>
+  <button title="Good Job!" class="red-button" onclick="
+    alert('Good Job!');
+    "> <!-- title adds a tooltip, which is like a button title on hover - btw this is a comment-->
+    Hello
+  </button>
+
+  <p>
+    Paragraph of <button class="yellow-button">Hello?</button> text!
+  </p>
+
+
+  <script>
+    //this is a comment for javascript
+    /*
+    multi-line
+    comment
+    */
+    // this is an alert
+    // alert('hello');
+    console.log('this will show in the console on the site'); //print 2 console
+    console.log(`so will this ${60 + 9}`);
+  </script>
+</body>
+</html>
