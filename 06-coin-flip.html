@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coin FLip</title>
+</head>
+<body>
+
+  <p>Can you guess a coin flip, or will you fail!
+  <!-- if style-->
+  </p>
+  <button onclick="
+    const randNum = Math.random();
+    let result = ''
+
+    if (randNum < 1/2) {
+      result = 'Heads'
+    } else {
+      result = 'Tails';
+    };
+
+    let verdict = '';
+    if (result === 'Heads') {
+      verdict = 'You Nailed it!'
+    } else {
+      verdict = 'Wrong side this time';
+    };
+    console.log(verdict);
+
+  ">Heads</button>
+  <button onclick="
+  const randNum = Math.random();
+  let result = ''
+
+  if (randNum < 1/2) {
+    result = 'Heads'
+  } else {
+    result = 'Tails';
+  };
+
+  let verdict = '';
+  if (result === 'Tails') {
+    verdict = 'You Nailed it!'
+  } else {
+    verdict = 'Wrong side this time';
+  };
+  console.log(verdict);
+
+  ">Tails</button>
+
+  <!-- ternary operators -->
+
+  <button onclick="
+   const randNum = Math.random();
+   const result = randNum < 0.5 ? 'Heads' : 'tails';
+   const verdict = result === 'Heads' ? 'You Nailed it!' : 'Wrong, try agian';
+   console.log(verdict);
+ 
+  ">Heads</button>
+  <button onclick="
+    const randNum = Math.random();
+    const result = randNum <0.5 ? 'Heads' : 'Tails';
+    const verdict = result === 'Tails' ? 'You Nailed it!' : 'Wrong, try again';
+    console.log(verdict);
+  ">Tails</button>
+
+  <script>
+
+
+
+
+  </script>
+</body>
+</html>

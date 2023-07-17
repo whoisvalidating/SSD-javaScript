@@ -96,6 +96,53 @@
     console.log(!true);
     //this is a NOT logical operator. it flips the value making it FALSE
 
+    //truthy and falsy values
+    //this will display truthy in the console due to 5 acting like true
+    if (5) {
+      console.log('truthy');
+    };
+    //this will display false
+    if (0) {
+      console.log('falsy');
+    }
+    //in java script all values are true except the ones declared false. the false values are - false, 0, '', NaN, undefined, and null
+
+    //this would cause the log to occurs unless the value is 0
+    const cartQuantity = 5;
+    if (cartQuantity) {
+      console.log('cart has products')
+    }
+
+    //this will displat true because its NOT falsy
+    console.log(!0)
+    //this will be NaN so falsy
+    console.log('text' / 5);
+    //this is an example of undefined
+    let variable1;
+    console.log(variable1);
+
+
+    //ternary operator
+    //this would be read as If true 'truthy' else 'falsy'
+    true ? 'truthy' :'falsy';
+
+    //and operator
+    //this would stop at FALSE and not run the right side. this is an example of a guard operator
+    false && console.log('hello');
+
+    //can be saved in a var
+    //value would be false
+    const message = false && 'hello';
+    console.log(message);
+    //this would display hello
+    const message = truthy && 'hello';
+    console.log(message);
+
+    //or operator ||
+    //this would display EUR because its selected first
+    const currency = 'EUR' || 'USD';
+    //this would show USD because the first value is false so it defaults to usd
+    const currency = undefined || 'usd';
 
 
 

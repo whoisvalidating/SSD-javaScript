@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>06-Exercises</title>
+</head>
+<body>
+  <p>you should see this i hope!</p>
+
+
+
+
+  <script>
+//a
+let hour = 3; 
+let timeOfDay = '';
+
+if (hour >= 6 && hour <= 12) {
+  timeOfDay = 'Good Morning!';
+} else if (hour >=13 && hour <=17) {
+  timeOfDay = 'Good Afternoon!';
+} else {
+  timeOfDay = 'Good Night!';
+};
+
+console.log(timeOfDay);
+
+//b
+hour = 8;
+if (hour >= 6 && hour <= 12) {
+  timeOfDay = 'Good Morning!';
+} else if (hour >=13 && hour <=17) {
+  timeOfDay = 'Good Afternoon!';
+} else {
+  timeOfDay = 'Good Night!';
+};
+console.log(timeOfDay)
+
+hour = 15;
+if (hour >= 6 && hour <= 12) {
+  timeOfDay = 'Good Morning!';
+} else if (hour >=13 && hour <=17) {
+  timeOfDay = 'Good Afternoon!';
+} else {
+  timeOfDay = 'Good Night!';
+};
+console.log(timeOfDay);
+
+//c
+const name = 'whoIsAbk'
+console.log(`${timeOfDay} ${name}`);
+
+//d
+let age = 65;
+let discount = 'No Discount, Sorry!';
+
+if (age <= 6 || age >= 65) {
+  discount = 'You Qualify for a discount!';
+}
+console.log(discount);
+
+//e
+discount = 'No Discount, Sorry!';
+const isHoliday = true;
+if ((age <= 6 || age >= 65) && !isHoliday) {
+  discount = 'You Qualify for a discount!';
+}
+console.log(discount);
+
+
+  </script>
+</body>
+</html>
